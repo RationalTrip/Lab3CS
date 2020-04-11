@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main(){
 int i,j,z,sumA,sumB,sumPairs;
@@ -8,7 +11,7 @@ for (int p; p<200; p++){
 for (i=1;i<10000;i++){
   sumA = 0;
   for (j=1;j<i;j++){
-    if (i%j==0)    
+    if (i%j==0)
       sumA += j;
   }
 
@@ -19,10 +22,10 @@ for (i=1;i<10000;i++){
   }
 
   if (sumB == i && sumB != sumA)
-    sumPairs += i * p;  
+    sumPairs += i * p;
 }
 }
 
-
+cout << sumPairs;
 return 0;
 }
