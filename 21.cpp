@@ -7,7 +7,7 @@ int main(){
 int i,j,z,sumA,sumB,sumPairs;
 
 sumPairs = 0;
-for (int p; p<10; p++){
+for (int p = 0; p<5; p++){
 for (i=1;i<10000;i++){
   sumA = 0;
   for (j=1;j<i;j++){
